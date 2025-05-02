@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI‑Supported Artificial Pancreas</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.6.0/dist/tf.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>AI‑Supported Artificial Pancreas</h1>
+  </header>
+
+  <section class="intro">
+    <p>The artificial pancreas is a revolutionary biomedical device designed to automate blood glucose control in patients with diabetes. By continuously monitoring glucose levels and delivering insulin doses via a closed‑loop algorithm, it mimics the healthy pancreas’s function. Recent advances in AI have enhanced its predictive accuracy, allowing for anticipatory insulin delivery. This not only reduces the burden of manual glucose checks but also minimizes the risk of hypoglycemia and hyperglycemia. Early clinical trials have shown improved quality of life and better long‑term outcomes. As sensor technology becomes more accurate and algorithms more sophisticated, the artificial pancreas is poised to become the new standard of care.</p>
+  </section>
+
+  <section id="test-levels">
+    <h2>Test Your Levels</h2>
+    <div class="controls">
+      <label for="sugarInput">Sugar Level Input (mg/dL):</label>
+      <input id="sugarInput" type="number" value="100" min="40" max="400"/>
+      <button id="simulateBtn">Simulate</button>
+    </div>
+    <canvas id="glucoseChart"></canvas>
+    <div id="result"></div>
+    <div id="suggestions"></div>
+  </section>
+
+  <section class="why">
+    <h2>Why Do Sugar Spikes or Drops Happen?</h2>
+    <p>1. Rapid carbohydrate intake can overwhelm insulin action, causing spikes.</p>
+    <p>2. Missing or under‑dosing an insulin bolus leads to elevated glucose thereafter.</p>
+    <p>3. Excessive exercise or delayed meals may trigger hypoglycemia (drops).</p>
+    <p>4. Stress hormones like cortisol can interfere with glucose uptake.</p>
+    <p>5. Illness or certain medications can disrupt normal glucose metabolism.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Information</h2>
+    <p><strong>Student Name:</strong> Austin Alex (RA2311013010036)</p>
+    <p><strong>Email:</strong> aa3740@srmist.edu.in</p>
+    <p><strong>Faculty in Charge:</strong> Dr. Shivaranjini S</p>
+  </section>
+
+  <script src="js/ai_model.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
