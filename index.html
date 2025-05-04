@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artificial Pancreas Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Artificial Pancreas Assistant</h2>
+    <p>Enter your blood sugar (mg/dL):</p>
+    <input type="number" id="glucoseInput" placeholder="e.g. 120">
+    <br>
+    <button onclick="checkGlucose()">Check</button>
+    <div class="result" id="resultMessage"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
